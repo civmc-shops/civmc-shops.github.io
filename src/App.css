@@ -1,0 +1,113 @@
+.App {
+  text-align: center;
+  background: #181a20;
+  min-height: 100vh;
+}
+
+.App-header {
+  background-color: #23272f;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: #eaf0fa;
+  padding-top: 3vh;
+}
+
+input[type="text"] {
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #191c22;
+  color: #eaf0fa;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border-color: #61dafb;
+}
+
+.searchbar-container {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+  width: 100%;
+}
+
+.searchbar {
+  font-size: 2rem;
+  padding: 0.75em 2em;
+  border-radius: 12px;
+  border: 1px solid #444;
+  background: #191c22;
+  color: #eaf0fa;
+  width: 33vw;
+  max-width: 600px;   
+  min-width: 220px;   
+  outline: none;
+  transition: border 0.2s;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.searchbar:focus {
+  border-color: #61dafb !important;
+}
+
+.shop-list {
+  width: 100%;
+  max-width: 62.5vw;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+
+/* Hide number input spinners for Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide number input spinners for Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* Style for the coordinate input boxes */
+input[type=number] {
+   background: #2a2e38;
+  color: #f5f6fa;
+  border: 1px solid #292d38;
+  border-radius: 4px;
+  padding: 0.4em 0.7em;
+  font-size: 1em;
+  width: 5.5em;
+}
+
+/* Optional: style the placeholder text for even lighter appearance */
+input[type=number]::placeholder {
+  color: #e0e0e0;
+  opacity: 0.5; /* show half opacity */
+}
+
+/* Center the coordinate input row and add spacing below */
+.coords-input-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin: 1em 0 0 0;  /* extra bottom padding */
+}
+
+html, body, #root, .App {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #24272c !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+}
