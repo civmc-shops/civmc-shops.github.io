@@ -1,1 +1,0 @@
-# civmc-stores.github.io
